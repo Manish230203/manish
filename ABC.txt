@@ -1,0 +1,46 @@
+""" #Ternary Operators
+age=int(input('Enter your age'))
+print('You are not an adult' if age<18 else'Just 18!' if age==18 else'Legally adult')
+
+#using if,el if,else
+age=int(input('Enter your age'))
+if(age<18):
+    print('You are not an adult yet')
+el if(age==18):
+    print('Just 18!')
+else:
+    print('Legally Adult')
+"""
+
+
+#in python for switch case there is keyword called match.
+day=input('Enter a day of week')
+match day:
+    case 'Mon'|'mon'|'Monday'|'monday':
+        print('Monday')
+    case 'Tues'|'tues'|'Tuesday'|'tuesday':
+        print('Tuesday')
+    case 'Wed'|'wed'|'Wednesday'|'wednesday':
+        print('Wednesday')
+    case 'Thu'|'Thu'|'Thursday'|'thursday':
+        print('Thursday')
+    case 'Fri'|'fri'|'Friday'|'friday':
+        print('Friday')
+    case 'Sat'|'sat'|'Saturday'|'saturday':
+        print('Saturday')
+    case 'Sun'|'sun'|'Sunday'|'sunday':
+        print('Sunday')
+    case _:
+        print('Incorrect Value')
+
+
+
+while(True):
+    num=int(input("Enter a number:-"))
+    if(num%2==0):
+        print('Even Number')
+        continue
+    else:
+        print('Odd Number')
+        break
+    
